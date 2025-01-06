@@ -1,0 +1,160 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: gothambook;
+}
+
+nav .navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav .navbar .logo img {
+    width: 118px;
+}
+
+nav .navbar .menu {
+    display: flex;
+    position: relative;
+}
+
+nav .navbar .menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navbar .menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 6px 0;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+nav .menu-btn,
+.navbar .menu .close-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.navbar .menu .close-btn {
+    color: #007125;
+}
+
+.navbar .menu .menu-btn {
+    color: #ffffff;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle,
+        rgba(40, 193, 2, 1) 0%,
+        rgba(0, 113, 37, 1) 40%
+    );
+    clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
+    box-shadow: -19px 2px 11px -3px rgba(0, 0, 0, 0.69);
+}
+
+section .content {
+    position: relative;
+    width: 40%;
+    box-sizing: border-box;
+    left: 60%;
+    margin-top: 80px;
+}
+
+section .content h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+section .content h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+section .imgbx {
+    position: absolute;
+    left: 35%;
+}
+
+section .imgbx img {
+    max-height: 650px;
+}
+
+section .content p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 80%;
+}
+
+.social {
+    color: #fff;
+    display: flex;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a i {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+@media (max-width: 1500px) {
+    nav .navbar {
+        width: 90%;
+    }
+
+}
