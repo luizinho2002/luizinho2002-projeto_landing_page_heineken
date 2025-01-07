@@ -159,7 +159,7 @@ section .content p {
 
     nav .navbar .menu {
         position: fixed;
-        left: -100%;
+        left: 100%;
         top: 0;
         background: #fff;
         height: 100vh;
@@ -170,7 +170,7 @@ section .content p {
         align-items: center;
         transition: all 0.5s ease;
     }
-
+ 
     .navbar.active .menu {
         left: 0;
     }
