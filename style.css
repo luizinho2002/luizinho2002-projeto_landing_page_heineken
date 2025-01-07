@@ -157,4 +157,155 @@ section .content p {
         width: 90%;
     }
 
+    nav .navbar .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: #fff;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .navbar.active .menu {
+        left: 0;
+    }
+
+    navbar .navbar .menu a {
+        font-size: 23px;
+        display: block;
+        color: #007125;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    nav .menu-btn {
+        top: 30%;
+    }
+
+    nav .menu-btn,
+    .navbar .menu .close-btn {
+      display: block;
+    }
+
+    section .content {
+        position: relative;
+        width: 40%;
+        box-sizing: border-box;
+    }
+
+    section .imgbx {
+        position: absolute;
+        left: 510px;
+    }
+
+    section .imgbx img {
+        max-height: 700px;
+    }
+}
+
+@media (max-width: 1450px) {
+    section .imgbx {
+        position: absolute;
+        left: 480px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1375px) {
+    section .imgbx {
+        position: absolute;
+        left: 450px;
+    }
+}
+
+@media (max-width: 1320px) {
+    section .imgbx {
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media (max-width: 825px) {
+    section {
+        flex-direction: column;
+        justify-content: center;
+        background: radial-gradient(
+            circle,
+            rgba(40, 193, 2, 1) 0%,
+            rgba(0, 113, 37, 1) 40%
+        );
+    }
+
+    section::before {
+        clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 70%);
+        background: radial-gradient(
+          circle,
+          rgba(40, 193, 2, 1) 0%,
+          rgba(0, 113, 37, 1) 40%
+        );
+
+        background-size: cover;
+    }
+
+    section .content {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        left: 0;
+        padding: 40px;
+    }
+
+    section .imgbx {
+        position: relative;
+    }
+
+    section .imgbx img {
+        max-height: 650px;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    section .content {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        left: 0;
+        padding: 20px;
+    }
+
+    section .imgbx img {
+        margin-top: 30%;
+        max-height: 480px;
+    }
+
+    section .content p {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .social {
+        color: #fff;
+        display: flex;
+    }
+
+    .social li {
+        list-style: none;
+    }
+
+    .social li a i {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 30px;
+        margin-top: 20px;
+        padding: 20px 0;
+        font-size: 30px;
+    }
 }
